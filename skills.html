@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="./css/skills.css">
+    <title>skills</title>
+</head>
+<body>
+
+<div class='skills-container'>
+    <div class='navbar'>
+        <div class='hamburger'>
+            <div class='line' id='line-one'></div>
+            <div class='line' id='line-two'></div>
+            <div class='line' id='line-three'></div>
+        </div>
+        <div class='links'>
+            <div class='link'>About</div>
+            <div class='link'>Work</div>
+            <div class='link'>Contact</div>
+        </div>
+        <div class='pointer'></div>
+        <div class='border'></div>
+        <div class='social'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> <!-- end navbar -->
+    <div class='soft-skills'>
+        <h4>Soft-Skills</h4>
+        <div class='s-sk leadership'>
+            <div class='symbol'></div>
+            <div class='sk-title'>Leadership</div>
+        </div>
+        <div class='s-sk intelligence'>
+            <div class='symbol'></div>
+            <div class='sk-title'>Intelligence</div>
+        </div>
+        <div class='s-sk productivity'>
+            <div class='symbol'></div>
+            <div class='sk-title'>Productivity</div>
+        </div>
+    </div>
+    <div class='hard-skills'>
+        <div class='skill-tree'>
+            <div class='list'>
+                <div class='h-sk' id='skill-one'>Javascript</div>
+                <div class='h-sk' id='skill-two'>React</div>
+                <div class='h-sk' id='skill-three'>Python</div>
+                <div class='h-sk' id='skill-four'>PHP</div>
+            </div>
+            <div class='branches'>
+                <div id='number-display'></div>
+                <svg class='branch-node' height="100" width="230">
+                    <circle id='circle' cx="15" cy="20" r="4" stroke="white" stroke-width="2" fill="none" />
+                    <polyline id='polyline' points="20,20 80,20 130,55 230,55 " style="fill:none;stroke:rgb(255, 255, 255);stroke-width:1" />
+                    <polyline id='polyline-two' points="180,55 210,70 230,70 " style="fill:none;stroke:rgb(255, 255, 255);stroke-width:2" />
+                </svg>
+            </div>
+            <div class='code'>
+                <div id='skill-title'></div>
+                <div class='scroll-code'> 
+                    <p>ajax json typescriptJquery modular java</p>
+                        <p>scriptasynchronous loops data functions</p>
+                            <p>front-end back-end ajax json typescript Jquerymodular</p>
+                     <p>script asynchronous loops data</p> 
+
+                    <p>front-end back-end ajax json typescriptJquery modular java</p>
+                    <p>script asynchronousloops data functions</p>
+                        <p>front-end back-end ajax json</p> 
+                    <p>scriptasynchronous loopsdatafunctions</p>
+
+                    <p>front-end back-end</p>
+                    <p>ajax json  typescript Jquery</p>
+                    <p>script asynchronou loops data functions</p>
+                    <p>front-end back-end</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script src='../jquery-3.3.1.js'></script>
+    <script src='./js/skills.js'></script>
+</body>
+</html>

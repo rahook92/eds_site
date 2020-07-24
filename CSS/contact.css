@@ -1,0 +1,213 @@
+.contact-container {
+    position: absolute;
+    background-image: url(../Images+Fonts/bkgrd-1.jpg);
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0 30px;
+    overflow: hidden;
+}
+/* navbar */
+
+@keyframes grow {
+    from {
+        width: 50%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes shift {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 10%;
+    }
+}
+.navbar {
+    width: 50%;  
+    grid-row: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    z-index: 1;
+}
+.navbar:hover {
+    z-index: 2;
+    animation: grow .1s linear forwards;
+}
+.navbar:hover .border {
+    animation: shift .1s linear forwards;
+}
+.navbar:hover .links {
+    display: block;
+    animation: appear .1s linear forwards;
+}
+.navbar:hover .hamburger {
+    animation: fade .05s linear forwards;
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+.hamburger {
+    position: absolute;
+    width: 2%;
+    height: 19px;
+    left: 1%;
+    top: 2%;
+}
+@keyframes grow {
+    0% {
+        font-size: 14px;
+    }
+    100% {
+        font-size: 18px;
+    }
+}
+@keyframes shrink {
+    0% {
+        font-size: 18px;
+    }
+    100% {
+        font-size: 14px;
+    }
+}
+.link {
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 20px 0;
+}
+@keyframes elongate {
+    to {
+        width: 109px;
+    }
+}
+.link-border {
+    width: 1px;
+    height: 0px;
+    border: 1px solid rgba(255, 252, 252, 0.4);
+    animation: elongate .3s linear forwards;
+}
+.links {
+    position: relative;
+    left: 10%;
+    top: 5%;
+    display: none;
+}
+.line {
+    position: absolute;
+    border: 1px solid #FFFCFC;
+    height: 0px;
+    width: 35px;
+}
+#line-one{
+    top: 2px;
+}
+#line-two {
+    top: 12px;
+}
+#line-three {
+    top: 22px;
+}
+.border {
+    position: absolute;
+    width: 1px;
+    height: 95%;
+    left: 5%;
+    background: linear-gradient(#FFFCFC, rgba(32, 32, 32, 0.5));
+}
+.pointer {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    left: 9.6%;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 6px solid #66DBE2;
+}
+/* end--navbar */
+/* Main */
+#header {
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    font-size: 120px;
+    font-family: Montserrat;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    line-height: 136px;
+    margin: 15% 0 0 0;
+}
+.contact-form {
+    grid-row: 2 / 3;
+    grid-column: 5 / 8;
+    margin-top: 15%;
+}
+.labels {
+    color: #EC3939;
+    font-family: Montserrat;
+}
+#name-label {
+    width: 20%;
+    position: relative;
+    left: 140px;
+}
+#name {
+    width: 240px;
+    height: 46px;
+    border: 3px solid #62A1B5;
+    box-sizing: border-box;
+    box-shadow: -5px 6px 10px rgba(124, 179, 197, 0.1);
+    border-radius: 4px;
+    background-color: transparent;
+    position: relative;
+    right: 40px;
+}
+#email {
+    width: 240px;
+    height: 46px;
+    border: 3px solid #62A1B5;
+    box-sizing: border-box;
+    box-shadow: -5px 6px 10px rgba(124, 179, 197, 0.1);
+    border-radius: 4px;
+    background-color: transparent;
+}
+#subject {
+    width: 485px;
+    height: 46px;
+    border: 3px solid #62A1B5;
+    box-sizing: border-box;
+    box-shadow: -5px 6px 10px rgba(124, 179, 197, 0.1);
+    border-radius: 4px;
+    background-color: transparent;
+    position: relative;
+    right: 100px;
+    margin-top: 30px;
+}
+#message {
+    width: 485px;
+    height: 200px;
+    border: 3px solid #62A1B5;
+    box-sizing: border-box;
+    box-shadow: -5px 6px 10px rgba(124, 179, 197, 0.1);
+    border-radius: 4px;
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+    margin-top: 30px;
+}

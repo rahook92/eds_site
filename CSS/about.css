@@ -1,0 +1,250 @@
+.about-container {
+    position: absolute;
+    background-image: url(../Images+Fonts/bkgrd-1.jpg);
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-area: about;
+    grid-template-columns: 5% 35% 15% 15% 15% 15%;
+    grid-template-rows: 100%;
+    overflow: hidden;
+}
+
+#personal-photo {
+    position: absolute;
+    width: 836px;
+    height: 709px;
+    left: 0px;
+    top: 0px;
+    background-image: url('../Images+Fonts/personal.jpg'); 
+    background-size: 124%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    grid-column: 0 / 3;
+    grid-row: 0 / 1;
+    overflow: hidden;
+}
+/* navbar */
+
+@keyframes grow {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 200%;
+    }
+}
+@keyframes shift {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 10%;
+    }
+}
+.navbar {
+    grid-column: 0 / 1;  
+    grid-row: 0 / 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    z-index: 1;
+}
+.navbar:hover {
+    z-index: 2;
+    animation: grow .1s linear forwards;
+}
+.navbar:hover .border {
+    animation: shift .1s linear forwards;
+}
+.navbar:hover .links {
+    display: block;
+    animation: appear .1s linear forwards;
+}
+.navbar:hover .hamburger {
+    animation: fade .05s linear forwards;
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+.hamburger {
+    position: absolute;
+    width: 2%;
+    height: 19px;
+    left: 1%;
+    top: 2%;
+}
+@keyframes grow {
+    0% {
+        font-size: 14px;
+    }
+    100% {
+        font-size: 18px;
+    }
+}
+@keyframes shrink {
+    0% {
+        font-size: 18px;
+    }
+    100% {
+        font-size: 14px;
+    }
+}
+.link {
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 20px 0;
+}
+@keyframes elongate {
+    to {
+        width: 109px;
+    }
+}
+.link-border {
+    width: 1px;
+    height: 0px;
+    border: 1px solid rgba(255, 252, 252, 0.4);
+    animation: elongate .3s linear forwards;
+}
+.links {
+    position: relative;
+    left: 10%;
+    top: 5%;
+    display: none;
+}
+.line {
+    position: absolute;
+    border: 1px solid #FFFCFC;
+    height: 0px;
+    width: 35px;
+}
+#line-one{
+    top: 2px;
+}
+#line-two {
+    top: 12px;
+}
+#line-three {
+    top: 22px;
+}
+.border {
+    position: absolute;
+    width: 1px;
+    height: 95%;
+    left: 5%;
+    background: linear-gradient(#FFFCFC, rgba(32, 32, 32, 0.5));
+}
+.pointer {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    left: 9.6%;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 6px solid #66DBE2;
+}
+/* end--navbar */
+
+#rect-el {
+    width: 8px;
+    height: 50px;
+    background: #4E4E4E;
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+
+#story {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    top: 150px;
+    z-index: 2;
+}
+#story p {
+    color: white;
+    font-family: Montserrat;
+    margin: 5px 0;
+
+}
+#story p:nth-child(1){
+    font-size: 22px;
+    width: 50%;
+}
+#story p:nth-child(2){
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    left: 15%;
+    bottom: 2%;
+    width: 50%;
+}
+#story p:nth-child(3){
+    font-size: 18px;
+    position: relative;
+    left: 5%;
+}
+#story p:nth-child(4){
+    font-size: 18px;
+    position: relative;
+    left: 10%;
+}
+#story p:nth-child(5){
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
+    width: 76%;
+    color: black;
+    background-color: white;
+}
+#story p:nth-child(6){
+    font-size: 30px;
+    font-weight: 500;
+    width: 78%;
+    margin-left: 2%;
+    color: black;
+    background-color: white;
+}
+#story p:nth-child(7){
+    font-size: 24px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 35px;
+    position: relative;
+    left: 34%;
+}
+#story p:nth-child(7) span{
+    font-weight: 400;
+    color: #89cff0;
+}
+#about {
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 300;
+    grid-column-start: 6;
+    grid-row-start: 1;
+    width: 80px;
+    height: 40px;
+    margin: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}

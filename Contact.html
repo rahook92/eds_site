@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="./css/contact.css">
+</head>
+<body>
+
+    <div class='contact-container'>
+
+        <div class='navbar'>
+            <div class='hamburger'>
+                <div class='line' id='line-one'></div>
+                <div class='line' id='line-two'></div>
+                <div class='line' id='line-three'></div>
+            </div>
+            <div class='links'>
+                <div class='link'>About</div>
+                <div class='link'>Work</div>
+                <div class='link'>Contact</div>
+            </div>
+            <div class='pointer'></div>
+            <div class='border'></div>
+            <div class='social'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> <!-- end navbar -->
+
+        <p id='header'>Get In Touch</p>
+
+        <form class='contact-form'>
+            <div>
+                <div class='labels' id='name-label'>name</div>
+                <input class='form-input' type='name' name='name' id='name'>
+                <!-- <label for='email'>Email</label> -->
+                <input class='form-input' type='email' name='email' id='email'>
+                <!-- <label for='subject'>Subject</label> -->
+                <input class='form-input' type='subject' name='subject' id='subject'>
+                <!-- <label for='message'>Message</label> -->
+                <textarea class='form-input' name="message" id="message" cols="30" rows="9"></textarea>
+                <!-- <svg id='message' height="200" width="485">
+                    <polyline points="0,0 485,0 485,140 375,140 375,200 0,200 0,0" style="fill:none;stroke:#62A1B5;stroke-width:3"/>
+                </svg> -->
+                <button type='submit' name='submit'>Send</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src='../jquery-3.3.1.js'></script>
+    <script src='./js/contact.js'></script>
+</body>
+</html>
