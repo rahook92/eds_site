@@ -12,7 +12,9 @@
     overflow: hidden;
 }
 /* navbar */
-
+a {
+    text-decoration: none;
+}
 @keyframes grow {
     from {
         width: 50%;
@@ -47,6 +49,14 @@
 .navbar:hover .links {
     display: block;
     animation: appear .1s linear forwards;
+}
+.navbar:hover .social {
+    display: flex;
+    flex-direction: row;
+    right: 40px;
+}
+.navbar:hover .social-link:not(:nth-child(1)) {
+    padding-left: 12px;
 }
 .navbar:hover .hamburger {
     animation: fade .05s linear forwards;
@@ -107,6 +117,13 @@
     left: 10%;
     top: 5%;
     display: none;
+}
+.social {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+    left: 20px;
 }
 .line {
     position: absolute;

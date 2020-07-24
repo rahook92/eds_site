@@ -49,7 +49,7 @@ linkArray.forEach((link)=>{
         $(linkBorder).insertAfter(event.target);
         //animate link
         $(event.target).css('animation', 'grow .1s linear forwards');
-        //animate border
+        //animate borde
         animateNavBorder(event);
         //hide hamburger
         animateHamburger(event);
